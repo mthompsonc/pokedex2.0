@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './Pokeball-Icon.png';
+import logo from './img/Pokeball-Icon.png';
 import './App.css';
-import Pokemon from './components/Pokemon'
+import Pokemon from './components/PokeData/index.js'
 import Logo from './img/logo';
 
 class App extends Component {
