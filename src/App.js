@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './Pokeball-Icon.png';
 import './App.css';
+import PokeInfo from './components/PokeInfo/'
 
 class App extends Component {
   render() {
@@ -10,9 +11,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to Pokedex-React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <PokeInfo />
       </div>
     );
   }
