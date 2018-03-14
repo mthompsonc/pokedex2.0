@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './Pokeball-Icon.png';
 import './App.css';
 import PokeInfo from './components/PokeInfo/'
+import Pokemon from './components/Pokemon'
 
 class App extends Component {
   render() {
@@ -12,7 +13,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to Pokedex-React</h1>
         </header>
         <PokeInfo />
+        <Pokemon/>
       </div>
+        
     );
   }
 }
