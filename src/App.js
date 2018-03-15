@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import Paper from 'material-ui/Paper';
-import logo from './img/Pokeball-Icon.png';
+import logo from './components/PokeImg/Pokeball';
 import './App.css';
 import PokeData from './components/PokeData/PokeData';
 import Logo from './components/PokeImg/PokeLogo';

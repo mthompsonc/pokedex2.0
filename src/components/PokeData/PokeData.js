@@ -6,7 +6,7 @@ const charmander= 'charmander';
 const squirtle= 'squirtle';
 const bulbasaur= 'bulbasaur';
 
-class PokeData extends Component {
+class Pokemon extends Component {
     constructor ({poke}) {
     // invoca métodos existenes de un padre (data1, data2)
     super();
@@ -53,4 +53,4 @@ class PokeData extends Component {
   }
 }
 
-export default PokeData;
+export default Pokemon;
