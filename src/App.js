@@ -4,8 +4,9 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import Paper from 'material-ui/Paper';
 import logo from './img/Pokeball-Icon.png';
 import './App.css';
-import Pokemon from './components/PokeData/index.js'
-import Logo from './img/logo';
+import PokeData from './components/PokeData/PokeData';
+import Logo from './components/PokeImg/PokeLogo';
+import Pokeball from './components/PokeImg/Pokeball';
 
 class App extends Component {
   render() {
@@ -21,7 +22,7 @@ class App extends Component {
               </Row>
               <Row>
                 <Col xs={12} sm={12} md={12} lg={12}>
-                  <img src={logo} className="isologo" alt="logo" />
+                  <Pokeball />
                 </Col>
               </Row>
             </Grid>
@@ -30,7 +31,7 @@ class App extends Component {
         <Grid>
           <Row>
             <Col xs={12} sm={12} md={3} lg={3}>
-            <Pokemon />
+            <PokeData />
             </Col>
           </Row>
         </Grid>

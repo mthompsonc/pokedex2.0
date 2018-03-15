@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
+const url= 'http://pokeapi.salestock.net/api/v2/pokemon/';
+const pikachu= 'pikachu';
+const charmander= 'charmander';
+const squirtle= 'squirtle';
+const bulbasaur= 'bulbasaur';
 
-
-class Pokemon extends Component {
-    constructor () {
+class PokeData extends Component {
+    constructor ({poke}) {
     // invoca métodos existenes de un padre (data1, data2)
     super();
     // toma el estado del componente en ese punto de tiempo
@@ -28,7 +32,7 @@ class Pokemon extends Component {
 
   componentWillMount() {
     // console.log('ComponentWillMount');
-    fetch(`http://pokeapi.salestock.net/api/v2/pokemon/2/`)
+    fetch(`${url}${pikachu}`)
     .then(data => {
       console.log(data);
       return data.json();
@@ -43,9 +47,10 @@ class Pokemon extends Component {
     return (
       <div>
       <img src={this.state.img}/>
+      <h2>{this.state.name}</h2>
       </div>
     );
   }
 }
 
-export default Pokemon;
+export default PokeData;
