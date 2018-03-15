@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 
+
 class Pokemon extends Component {
-    constructor ({city}) {
+    constructor () {
     // invoca métodos existenes de un padre (data1, data2)
     super();
     // toma el estado del componente en ese punto de tiempo
