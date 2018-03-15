@@ -47,6 +47,7 @@ class Pokemon extends Component {
     return (
       <div>
       <img src={this.state.img}/>
+      <h2>{this.state.name}</h2>
       </div>
     );
   }
