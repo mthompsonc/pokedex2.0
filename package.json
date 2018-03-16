@@ -1,8 +1,10 @@
 {
   "name": "pokedex2.0",
+  "homepage": "http://mthompsonc.github.io/pokedex2.0",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "material-ui": "^0.20.0",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",

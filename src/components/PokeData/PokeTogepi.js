@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 const url= 'http://pokeapi.salestock.net/api/v2/pokemon/';
-const bulbasaur= 'bulbasaur';
+const togepi= 'togepi';
 
-class Bulbasaur extends Component {
+class Togepi extends Component {
     constructor ({poke}) {
     // invoca métodos existenes de un padre (data1, data2)
     super();
@@ -29,7 +29,7 @@ class Bulbasaur extends Component {
 
   componentWillMount() {
     // console.log('ComponentWillMount');
-    fetch(`${url}${bulbasaur}`)
+    fetch(`${url}${togepi}`)
     .then(data => {
       console.log(data);
       return data.json();
@@ -50,4 +50,4 @@ class Bulbasaur extends Component {
   }
 }
 
-export default Bulbasaur;
+export default Togepi;
