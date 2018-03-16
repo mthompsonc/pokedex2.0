@@ -6,6 +6,7 @@ import logo from './components/PokeImg/Pokeball';
 import './App.css';
 import Pikachu from './components/PokeData/PokePikachu';
 import Bulbasaur from './components/PokeData/PokeBulbasaur';
+import Togepi from './components/PokeData/PokeTogepi';
 import Charmander from './components/PokeData/PokeCharmander';
 import Squirtle from './components/PokeData/PokeSquirtle';
 import Eevee from './components/PokeData/PokeEevee';
@@ -40,6 +41,9 @@ class App extends Component {
             </Col>
             <Col xs={12} sm={12} md={2} lg={2}>
               <Bulbasaur />
+            </Col>
+            <Col xs={12} sm={12} md={2} lg={2}>
+              <Togepi />
             </Col>
             <Col xs={12} sm={12} md={2} lg={2}>
               <Charmander />

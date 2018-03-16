@@ -26,6 +26,11 @@ Utilizamos la librería React para realizar este proyecto por lo que viene con u
 
     $ npm start
 
+### Flujo de la página con componentes de React.
+
+![img](https://image.ibb.co/dVpccx/Captura_de_pantalla_2018_03_16_a_las_10_27_14.png)
+
+
 ### Dependencias de Producción
 
 * `react` – Para diseño UI de la página.
