@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
+import ActionPoke from './../PokeClick'
+
 
 const url= 'http://pokeapi.salestock.net/api/v2/pokemon/';
 const pikachu= 'pikachu';
 const charmander= 'charmander';
 const squirtle= 'squirtle';
 const bulbasaur= 'bulbasaur';
+
+
+  const PokeClick = () => {
+    console.log('hola')
+    this.setState({
+      name: 'Hola',
+    })
+  }
 
 class Pokemon extends Component {
     constructor ({poke}) {
@@ -14,12 +24,12 @@ class Pokemon extends Component {
     // set.state los puede setear y entregarle datos nuevos
     this.state = {
       name: null,
-      description: null,
+      id: null,
+      img: null,
+      abilities: null,
+      types: null,
       height: null,
       weight: null,
-      img: null,
-      habitat: null,
-      evolution: null,
 
     }
     console.log('Constructor');
@@ -29,6 +39,7 @@ class Pokemon extends Component {
       city: 'Santiago',
       data: data2
     }) */
+
 
   componentWillMount() {
     // console.log('ComponentWillMount');
@@ -43,9 +54,11 @@ class Pokemon extends Component {
       console.log(this.state.name);
     })
   }
+
+
   render() {
     return (
-      <div>
+      <div onClick={this.pokeClick}>
       <img src={this.state.img}/>
       <h2>{this.state.name}</h2>
       </div>

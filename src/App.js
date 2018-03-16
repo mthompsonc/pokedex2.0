@@ -7,6 +7,8 @@ import './App.css';
 import PokeData from './components/PokeData/PokeData';
 import Logo from './components/PokeImg/PokeLogo';
 import Pokeball from './components/PokeImg/Pokeball';
+import ActionPoke from './components/PokeClick'
+
 
 class App extends Component {
   render() {
@@ -32,6 +34,11 @@ class App extends Component {
           <Row>
             <Col xs={12} sm={12} md={3} lg={3}>
             <PokeData />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} sm={12} md={12} lg={12}>
+            <pokeClick />
             </Col>
           </Row>
         </Grid>
