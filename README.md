@@ -15,6 +15,7 @@ Para instalar las dependencias utilizadas necesita tener instalado Node.js y npm
 ### Para instalar
 
 Luego de instalar Node.js y npm desde su terminal, solo necesita clonar este proyecto e instalar las dependencias con npm install.
+    
     $ git clone https://github.com/mthompsonc/pokedex2.0
     $ cd pokedex2.0
     $ npm install
