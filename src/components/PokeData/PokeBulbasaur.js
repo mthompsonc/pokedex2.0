@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import onItemClick from './../PokeClick.js';
 
 const url= 'http://pokeapi.salestock.net/api/v2/pokemon/';
 const bulbasaur= 'bulbasaur';
@@ -44,7 +45,7 @@ class Bulbasaur extends Component {
     return (
       <div>
       <img src={this.state.img}/>
-      <h2>{this.state.name}</h2>
+      <h2 onClick={onItemClick}>{this.state.name}</h2>
       </div>
     );
   }
