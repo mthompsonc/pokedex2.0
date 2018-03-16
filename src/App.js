@@ -4,7 +4,11 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import Paper from 'material-ui/Paper';
 import logo from './components/PokeImg/Pokeball';
 import './App.css';
-import PokeData from './components/PokeData/PokeData';
+import Pikachu from './components/PokeData/PokePikachu';
+import Bulbasaur from './components/PokeData/PokeBulbasaur';
+import Charmander from './components/PokeData/PokeCharmander';
+import Squirtle from './components/PokeData/PokeSquirtle';
+import Eevee from './components/PokeData/PokeEevee';
 import Logo from './components/PokeImg/PokeLogo';
 import Pokeball from './components/PokeImg/Pokeball';
 
@@ -30,8 +34,20 @@ class App extends Component {
         </div>
         <Grid>
           <Row>
-            <Col xs={12} sm={12} md={3} lg={3}>
-            <PokeData />
+            <Col xs={12} sm={12} md={2} lg={2}>
+              <Pikachu />
+            </Col>
+            <Col xs={12} sm={12} md={2} lg={2}>
+              <Bulbasaur />
+            </Col>
+            <Col xs={12} sm={12} md={2} lg={2}>
+              <Charmander />
+            </Col>
+            <Col xs={12} sm={12} md={2} lg={2}>
+              <Squirtle />
+            </Col>
+            <Col xs={12} sm={12} md={2} lg={2}>
+              <Eevee />
             </Col>
           </Row>
         </Grid>
